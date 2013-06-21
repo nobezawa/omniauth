@@ -4,5 +4,5 @@ Facebook::Application.routes.draw do
 
   match "/auth/:provider/callback" => "session#create"
   match "/auth/:facebook/callback" => "session#create"
-
+  match "vote" => "session#vote"
 end
